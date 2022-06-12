@@ -10,9 +10,9 @@
 
 / {
 	chosen {
-		framebuffer@CHANGEME {
+		framebuffer@83d000000 {
 			compatible = "simple-framebuffer";
-			reg = <0x8 0x7d0e2000 0x0 (2048 * 1536 * 4)>;
+			reg = <0x8 0x3d000000 0x0 (2048 * 1536 * 4)>;
 			width = <1536>;
 			height = <2048>;
 			stride = <(1536 * 4)>;
@@ -21,8 +21,8 @@
 	};
 
 	reserved-memory {
-		framebuffer_mem: memory@CHANGEME {
-			reg = <0x8 0x3e900000 0x0 (1334 * 750 * 4)>;
+		framebuffer_mem: memory@83d000000 {
+			reg = <0x8 0x3d000000 0x0 (2048 * 1536 * 4)>;
 			no-map;
 		};
 	};
